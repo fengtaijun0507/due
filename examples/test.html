@@ -1,0 +1,23 @@
+<html>
+<head>
+  <meta>
+  <title></title>
+</head>
+<script src="../dist/due.js"></script>
+<body>
+  <div id="app">
+    <p v-text="msg"></p>
+    <input type="text" v-model="msg">
+  </div>
+</body>
+<script type="text/javascript">
+  var Due = new Due({
+    el: '#app',
+    data: function () {
+      return {
+        msg: '第一个指令编写成功'
+      }
+    }
+  })
+</script>
+</html>
